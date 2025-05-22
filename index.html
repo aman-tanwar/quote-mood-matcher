@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Mood Matcher</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <img src="./images/logo.png" class="logo-img" alt="Logo" />
+        <div>
+          <h2>Your Daily Dose of</h2>
+          <h1>Quote Mood Matcher</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h3>Select Your Current Mood</h3>
+      <div class="controls-container">
+        <div class="mood-radios" id="mood-radios"></div>
+        <div class="short-check">
+          <label for="short-only-option" class="short-check-label"
+            >Short quotes only</label
+          >
+          <input type="checkbox" id="short-only-option" />
+        </div>
+        <button class="get-quote-btn" id="get-quote-btn">Show Quote</button>
+      </div>
+    </main>
+
+    <div class="quote-modal" id="quote-modal">
+      <button class="quote-modal-close-btn" id="quote-modal-close-btn">
+        X
+      </button>
+      <div class="quote-modal-inner" id="quote-modal-inner"></div>
+    </div>
+
+    <script src="quotesData.js" type="module"></script>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
